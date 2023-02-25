@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">B-alert</string>
+    <string name="b_alert">B_alert</string>
+    <string name="start" />
+    <string name="end">end</string>
+    <string name="submit" />
+
+    <string name="action_settings">Settings</string>
+
+    //lines to be added are below
+    <string name="login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="not_registered_register">Not Registered? Register</string>
+    <string name="face_detection">face detection</string>
+    <string name="logo_image">logo image</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log In</string>
+    <string name="dontaccount">Don\'t have an account?</string>
+
+
+</resources>

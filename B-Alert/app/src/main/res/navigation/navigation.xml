@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/faceAlert">
+
+
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.driver.drowsers.fragments.profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/tone2"
+        android:name="com.driver.drowsers.fragments.tone.Tone"
+        android:label="fragment_tone"
+        tools:layout="@layout/fragment_tone" />
+    <fragment
+        android:id="@+id/faceAlert"
+        android:name="com.driver.drowsers.fragments.facealert.FaceAlert"
+        android:label="fragment_face_alert"
+        tools:layout="@layout/fragment_face_alert">
+        <action
+            android:id="@+id/action_faceAlert_to_map2"
+            app:destination="@id/map2" />
+    </fragment>
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.driver.drowsers.fragments.map.Map"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_map2_to_faceAlert"
+            app:destination="@id/faceAlert" />
+    </fragment>
+
+</navigation>

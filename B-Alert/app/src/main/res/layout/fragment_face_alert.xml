@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".fragments.facealert.FaceAlert">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        map:layout_constraintBottom_toTopOf="@+id/btn_start"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/light_green"
+        android:elevation="4dp"
+        android:padding="18dp"
+        android:text="Start Detection"
+        map:cornerRadius="8dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <com.driver.drowsers.detection.CameraPreview
+        android:id="@+id/preview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        map:layout_constraintBottom_toTopOf="@+id/end_btn"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <com.driver.drowsers.detection.GraphicOverlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.driver.drowsers.detection.CameraPreview>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/end_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/light_green"
+        android:elevation="4dp"
+        android:padding="18dp"
+        android:text="END"
+        android:visibility="gone"
+        map:cornerRadius="8dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stop_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        map:cardBackgroundColor="@color/light_green"
+        map:cardCornerRadius="8dp"
+        map:cardElevation="5dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Stop Alarm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            map:cornerRadius="8dp"
+            map:drawableTopCompat="@drawable/ic_baseline_alarm_off_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_floating"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_baseline_tab_24"
+        android:visibility="invisible"
+        map:layout_constraintBottom_toBottomOf="@+id/stop_alarm"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/stop_alarm"
+        map:tint="@color/purple_700" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78032678774",
+    "project_id": "b-alert-cab67",
+    "storage_bucket": "b-alert-cab67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78032678774:android:8f88f2a263b425d2fa5457",
+        "android_client_info": {
+          "package_name": "com.driver.drowsers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78032678774-9k4mj9tvj0c7erhs3d3pbqoj6dkn165k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Emz_EXZVkAU3PV9K94lXtoXiczZQ_wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78032678774-9k4mj9tvj0c7erhs3d3pbqoj6dkn165k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
